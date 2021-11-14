@@ -1,0 +1,15 @@
+{{#each this}}
+<li class='list-group-item'>
+    <img src="{{flags.svg}}" alt="" width="30"><span> {{name.official}}</span>
+</li>
+<li class='list-group-item'> Capital: {{capital}} </li>
+<li class='list-group-item'> Population: {{population}} </li>
+<li class='list-group-item'> Languages:
+      {{#each languages}}
+        {{#if @last}}
+          <span>{{this}}</span>
+        {{else}}
+          <span>{{this}},</span>
+        {{/if}}
+      {{/each}}</li>
+{{/each}}
