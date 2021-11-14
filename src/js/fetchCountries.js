@@ -10,6 +10,6 @@ export function fetchCountries(name) {
         throw Error(response.statusText);
       }
       return response.json();
-    },
+    }
   );
-}
+};
