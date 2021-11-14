@@ -31,7 +31,7 @@ function renderCountries(countries) {
     // console.log('Too many matches found. Please enter a more specific name.');
     return;
   }
-  if (countries.length > 2 && countries.length < 10) {
+  if (countries.length >= 2 && countries.length <= 10) {
     refs.countryInfo.innerHTML = '';
     const markupList = countryListTpl(countries);
     refs.countryList.innerHTML = markupList;
